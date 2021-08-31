@@ -127,6 +127,25 @@ body {
   color: #3aafa9;
 }
 
+.about-redirect {
+  margin: 20px;
+}
+
+.about-redirect button {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #def2f1;
+  border: none;
+  color: #17252a;
+  border-radius: 25px 0px 25px 0px;
+}
+
+.about-redirect button:hover {
+  background-color: #2b7a78;
+}
+
 .redirect button:hover,
 .logout-redirect button:hover {
   background-color: #feffff;
