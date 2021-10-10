@@ -1,0 +1,317 @@
+html,
+body {
+  margin: 0;
+}
+
+.home-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.login-body,
+.home-body,
+.dashboard-body,
+.about-body,
+.account-set-body {
+  background-color: #3aafa9;
+}
+
+.home-header h1 {
+  font-size: 40px;
+  margin: 0;
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  letter-spacing: 0.5em;
+}
+
+.home-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 80px;
+}
+
+.home-main img {
+  border-radius: 50%;
+}
+
+.admin-home,
+.student-home,
+.faculty-home {
+  padding: 20px;
+  background-color: #def2f1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-home {
+  border-radius: 0px 25px;
+}
+
+.student-home {
+  border-radius: 25px;
+}
+
+.faculty-home {
+  border-radius: 25px 0px;
+}
+
+.admin-home a,
+.student-home a,
+.faculty-home a {
+  padding: 10px 20px;
+  border-radius: 25px 0px 25px 0px;
+  text-decoration: none;
+  font-family: "Oxygen", sans-serif;
+  background-color: #17252a;
+  color: #feffff;
+}
+
+.admin-home a:hover,
+.student-home a:hover,
+.faculty-home a:hover,
+.login-form-class button:hover,
+.register-form-class button:hover,
+.icon-redirect button:hover {
+  background-color: #2b7a78;
+}
+
+.admin-home img,
+.student-home img,
+.faculty-home img {
+  padding: 20px;
+}
+
+.admin-home h2,
+.student-home h2,
+.faculty-home h2 {
+  font-family: "Oxygen", sans-serif;
+  color: #17252a;
+}
+
+.login-header,
+.dashboard-header,
+.account-set-header,
+.about-header {
+  background-color: #17252a;
+  display: flex;
+  flex-direction: row;
+}
+
+.login-header h1,
+.dashboard-header h1,
+.account-set-header h1,
+.about-header h1 {
+  font-family: "Orbitron", sans-serif;
+  color: #3aafa9;
+  flex-grow: 5;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.redirect,
+.logout-redirect,
+.about-redirect {
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+  color: #3aafa9;
+}
+
+.redirect button,
+.logout-redirect button,
+.about-redirect button {
+  font-family: "Orbitron", sans-serif;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  color: #3aafa9;
+}
+
+.redirect button:hover,
+.logout-redirect button:hover,
+.about-redirect button:hover {
+  background-color: #feffff;
+  border-radius: 25px 0px 25px 0px;
+}
+
+.login-form,
+.register-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px;
+  font-family: "Oxygen", sans-serif;
+}
+
+.login-form img,
+.about-dev img,
+.register-form img {
+  border-radius: 25px 0px 0px 0px;
+}
+
+.form-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #def2f1;
+  width: 500px;
+  border-radius: 0px 0px 25px 0px;
+  color: #17252a;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form-class input,
+.register-form-class input {
+  border-radius: 25px 0px 25px 0px;
+  width: 200px;
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid #17252a;
+}
+
+.login-form-class label,
+.register-form-class label {
+  margin: 5px;
+  font-size: larger;
+}
+
+.login-form-class button,
+.register-form-class button {
+  font-family: "Orbitron", sans-serif;
+  margin: 20px 5px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  background-color: #17252a;
+  color: #feffff;
+  border-radius: 25px 0px 25px 0px;
+}
+
+.dashboard-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro {
+  font-family: "Orbitron", sans-serif;
+  margin: 20px;
+  background-color: #def2f1;
+  border-radius: 25px 0px 25px 0px;
+}
+
+.intro h2,
+.privileges h2 {
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+.user-image img {
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.privileges {
+  font-family: "Oxygen", sans-serif;
+  background-color: #def2f1;
+  border-radius: 25px 0px 25px 0px;
+}
+
+.icon-redirect {
+  display: flex;
+  flex-direction: row;
+}
+
+.icons {
+  padding: 0px 20px;
+  padding-bottom: 10px;
+}
+
+.icon-redirect svg,
+.icon-redirect form {
+  margin: 5px 15px;
+}
+
+.icon-redirect button {
+  font-family: "Orbitron", sans-serif;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  background-color: #17252a;
+  color: #feffff;
+  border-radius: 25px 0px 25px 0px;
+}
+
+.about {
+  background-color: #def2f1;
+  border-radius: 25px 0px 25px 0px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.about h1 {
+  color: #17252a;
+  padding: 5px;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+}
+
+.about h2 {
+  color: #17252a;
+  padding: 5px;
+  text-align: center;
+  font-family: "Oxygen", sans-serif;
+  padding-bottom: 15px;
+}
+
+.about-dev {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Oxygen", sans-serif;
+  letter-spacing: 0.2em;
+  margin: 20px;
+}
+
+.developers h1 {
+  color: #17252a;
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+}
+
+.dev-desp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #def2f1;
+  color: #17252a;
+  border-radius: 0px 0px 25px 0px;
+}
+
+.dev-desp h2 {
+  padding: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-container select {
+  border: none;
+  background-color: #3aafa9;
+  border-radius: 25px 0px 25px 0px;
+  padding: 12px;
+}
