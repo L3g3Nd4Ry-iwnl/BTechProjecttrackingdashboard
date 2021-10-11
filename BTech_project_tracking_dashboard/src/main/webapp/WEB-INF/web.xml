@@ -10,7 +10,7 @@
 		<servlet-name>Admin-login</servlet-name>
 		<url-pattern>/admin/login</url-pattern>
 	</servlet-mapping>
-	
+	<!--
 	<servlet>
 		<servlet-name>Admin-dashbaord</servlet-name>
 		<servlet-class>admin.AdminDashboard</servlet-class>
@@ -18,7 +18,7 @@
 	<servlet-mapping>
 		<servlet-name>Admin-dashboard</servlet-name>
 		<url-pattern>/admin/dashboard</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping>-->
 	
 	<!-- Faculty stuff-->
 	<servlet>
@@ -29,7 +29,7 @@
 		<servlet-name>Faculty-login</servlet-name>
 		<url-pattern>/faculty/login</url-pattern>
 	</servlet-mapping>
-	
+	<!-- 
 	<servlet>
 		<servlet-name>Faculty-dashbaord</servlet-name>
 		<servlet-class>faculty.FacultyDashboard</servlet-class>
@@ -37,7 +37,7 @@
 	<servlet-mapping>
 		<servlet-name>Faculty-dashboard</servlet-name>
 		<url-pattern>/faculty/dashboard</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping>-->
 	
 	<!-- Student stuff-->
 	<servlet>
@@ -48,7 +48,7 @@
 		<servlet-name>Student-login</servlet-name>
 		<url-pattern>/student/login</url-pattern>
 	</servlet-mapping>
-	
+	<!-- 
 	<servlet>
 		<servlet-name>Student-dashbaord</servlet-name>
 		<servlet-class>student.AdminDashboard</servlet-class>
@@ -56,7 +56,7 @@
 	<servlet-mapping>
 		<servlet-name>Student-dashboard</servlet-name>
 		<url-pattern>/student/dashboard</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping>-->
 	
 	<!-- Misc stuff-->
 	<servlet>
@@ -69,6 +69,6 @@
 	</servlet-mapping>
 	
     <welcome-file-list>
-      <welcome-file>home.html</welcome-file>
+      <welcome-file>/WEB-INF/home.html</welcome-file>
     </welcome-file-list>
 </web-app>
