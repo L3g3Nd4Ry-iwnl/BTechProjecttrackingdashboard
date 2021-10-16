@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class DBConnectivity {
 	public static Connection initializeDatabase() throws SQLException, ClassNotFoundException {
-		String dbDriver = "com.mysql.jdbc.Driver";
+		String dbDriver = "com.mysql.cj.jdbc.Driver";
         String dbURL = "jdbc:mysql://localhost/";
         String dbName = "projecttracker";
         String dbUsername = "root";

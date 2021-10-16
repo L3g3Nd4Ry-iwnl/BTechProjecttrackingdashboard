@@ -40,7 +40,6 @@ public class StudentLogin extends HttpServlet{
 			st.setString(1,usermail);
 			ResultSet rs = st.executeQuery();
 			
-			res.setContentType("text/html");
 			boolean account_valid = false;
 			while (rs.next()) {
 				account_valid = true;

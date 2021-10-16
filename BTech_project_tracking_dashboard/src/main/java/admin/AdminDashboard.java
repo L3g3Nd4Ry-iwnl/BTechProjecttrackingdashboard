@@ -1,7 +1,7 @@
 package admin;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 
 import javax.servlet.annotation.WebServlet;
@@ -33,12 +33,5 @@ public class AdminDashboard extends HttpServlet {
 			req.setAttribute("error","Unauthorized access");
 			req.getRequestDispatcher("../admin/login").forward(req, res);
 		}
-	}
-	
-	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
-		res.setContentType("text/html");
-		PrintWriter out= res.getWriter();
-		out.println("In post of admin dash");
-		out.close();
 	}
 }
