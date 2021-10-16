@@ -60,6 +60,9 @@
             <label><strong>
             ${error}
             </strong></label>
+            <label><strong>
+            ${logout_msg}
+            </strong></label>
         </div>
     </main>
 </body>

@@ -29,7 +29,7 @@ public class StudentDashboard extends HttpServlet{
 			}
 		}
 		if(isStudent) {
-			req.getRequestDispatcher("/WEB-INF/faculty/facultydashboard.jsp").forward(req, res);
+			req.getRequestDispatcher("/WEB-INF/student/studentdashboard.jsp").forward(req, res);
 		}
 		else {
 			req.setAttribute("error","Unauthorized access");
