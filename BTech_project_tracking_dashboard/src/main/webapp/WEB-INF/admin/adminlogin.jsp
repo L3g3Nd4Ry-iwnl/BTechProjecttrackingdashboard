@@ -23,7 +23,7 @@
             </form>
             <form action="../aboutus" method="GET">
                 <button>
-                    About
+                    About us
                 </button>
             </form>
             <form action="../faculty/login" method="GET">
@@ -42,7 +42,7 @@
         <img src="../images/project.jpg" height="auto" width="auto">
         <div class="form-details">	
             <h1>Welcome Back</h1>
-            <form class="login-form-class" method="POST" action="./">
+            <form class="login-form-class" method="POST" action="../admin/login">
                 <div>
                     <div class="form-container">
                         <label for="email"><strong>Email</strong></label>
@@ -57,6 +57,9 @@
                 </div>
                 <button type="submit" value="admin">Submit</button>
             </form>
+            <label><strong>
+            ${error}
+            </strong></label>
         </div>
     </main>
 </body>

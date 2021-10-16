@@ -1,72 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
     <display-name>BTech_project_tracking_dashboard</display-name>
-	<!--Admin Stuff -->
-	<servlet>
-		<servlet-name>Admin-login</servlet-name>
-		<servlet-class>admin.AdminLogin</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>Admin-login</servlet-name>
-		<url-pattern>/admin/login</url-pattern>
-	</servlet-mapping>
-	<!--
-	<servlet>
-		<servlet-name>Admin-dashbaord</servlet-name>
-		<servlet-class>admin.AdminDashboard</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>Admin-dashboard</servlet-name>
-		<url-pattern>/admin/dashboard</url-pattern>
-	</servlet-mapping>-->
 	
-	<!-- Faculty stuff-->
-	<servlet>
-		<servlet-name>Faculty-login</servlet-name>
-		<servlet-class>faculty.FacultyLogin</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>Faculty-login</servlet-name>
-		<url-pattern>/faculty/login</url-pattern>
-	</servlet-mapping>
-	<!-- 
-	<servlet>
-		<servlet-name>Faculty-dashbaord</servlet-name>
-		<servlet-class>faculty.FacultyDashboard</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>Faculty-dashboard</servlet-name>
-		<url-pattern>/faculty/dashboard</url-pattern>
-	</servlet-mapping>-->
-	
-	<!-- Student stuff-->
-	<servlet>
-		<servlet-name>Student-login</servlet-name>
-		<servlet-class>student.StudentLogin</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>Student-login</servlet-name>
-		<url-pattern>/student/login</url-pattern>
-	</servlet-mapping>
-	<!-- 
-	<servlet>
-		<servlet-name>Student-dashbaord</servlet-name>
-		<servlet-class>student.AdminDashboard</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>Student-dashboard</servlet-name>
-		<url-pattern>/student/dashboard</url-pattern>
-	</servlet-mapping>-->
-	
-	<!-- Misc stuff-->
-	<servlet>
-		<servlet-name>About-us</servlet-name>
-		<servlet-class>misc.AboutUs</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>About-us</servlet-name>
-		<url-pattern>/aboutus</url-pattern>
-	</servlet-mapping>
 	
     <welcome-file-list>
       <welcome-file>/WEB-INF/home.html</welcome-file>

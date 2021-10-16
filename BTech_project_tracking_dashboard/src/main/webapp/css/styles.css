@@ -9,10 +9,14 @@ body {
 }
 
 .login-body,
+.prj-body,
 .home-body,
 .dashboard-body,
 .about-body,
-.account-set-body {
+.account-set-body,
+.create-proj-body,
+.chgpwd-body,
+.update-body {
   background-color: #3aafa9;
 }
 
@@ -74,7 +78,11 @@ body {
 .faculty-home a:hover,
 .login-form-class button:hover,
 .register-form-class button:hover,
-.icon-redirect button:hover {
+.icon-redirect button:hover,
+.crtprj-form-class button:hover,
+.chgpwd-class button:hover,
+.update-class button:hover,
+.changepwd button:hover {
   background-color: #2b7a78;
 }
 
@@ -92,18 +100,26 @@ body {
 }
 
 .login-header,
+.prj-header,
 .dashboard-header,
 .account-set-header,
-.about-header {
+.about-header,
+.create-proj-header,
+.chgpwd-header,
+.update-header {
   background-color: #17252a;
   display: flex;
   flex-direction: row;
 }
 
 .login-header h1,
+.prj-header h1,
 .dashboard-header h1,
 .account-set-header h1,
-.about-header h1 {
+.about-header h1,
+.create-proj-header h1,
+.chgpwd-header h1,
+.update-header h1 {
   font-family: "Orbitron", sans-serif;
   color: #3aafa9;
   flex-grow: 5;
@@ -141,7 +157,10 @@ body {
 }
 
 .login-form,
-.register-form {
+.register-form,
+.project-form,
+.chgpwd-form,
+.update-form {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -151,7 +170,10 @@ body {
 
 .login-form img,
 .about-dev img,
-.register-form img {
+.register-form img,
+.project-form img,
+.chgpwd-form img,
+.update-form img {
   border-radius: 25px 0px 0px 0px;
 }
 
@@ -172,7 +194,10 @@ body {
 }
 
 .login-form-class input,
-.register-form-class input {
+.register-form-class input,
+.crtprj-form-class input,
+.chgpwd-class input,
+.update-class input {
   border-radius: 25px 0px 25px 0px;
   width: 200px;
   padding: 10px;
@@ -181,13 +206,19 @@ body {
 }
 
 .login-form-class label,
-.register-form-class label {
+.register-form-class label,
+.crtprj-form-class label,
+.chgpwd-class label,
+.update-class label {
   margin: 5px;
   font-size: larger;
 }
 
 .login-form-class button,
-.register-form-class button {
+.register-form-class button,
+.crtprj-form-class button,
+.chgpwd-class button,
+.update-class button {
   font-family: "Orbitron", sans-serif;
   margin: 20px 5px;
   padding: 10px 20px;
@@ -198,10 +229,23 @@ body {
   border-radius: 25px 0px 25px 0px;
 }
 
-.dashboard-main {
+.dashboard-main,
+.prj-main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.prj-main h1 {
+  font-family: "Oxygen", sans-serif;
+}
+
+.prj-main table th {
+  font-family: "Oxygen", sans-serif;
+}
+
+.prj-main table td {
+  font-family: "Orbitron", sans-serif;
 }
 
 .intro {
@@ -314,4 +358,43 @@ body {
   background-color: #3aafa9;
   border-radius: 25px 0px 25px 0px;
   padding: 12px;
+}
+
+table {
+  background-color: white;
+  width: 100%;
+  margin: 30px;
+}
+
+tr:hover {
+  background-color: #17252a;
+}
+
+th {
+  background-color: #17252a;
+  color: white;
+}
+
+td {
+  text-align: center;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+.prj-main a {
+  color: #3aafa9;
+}
+
+.changepwd button {
+  font-family: "Orbitron", sans-serif;
+  margin: 20px 5px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  background-color: #17252a;
+  color: #feffff;
+  border-radius: 25px 0px 25px 0px;
 }

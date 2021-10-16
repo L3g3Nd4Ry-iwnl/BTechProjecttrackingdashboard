@@ -26,7 +26,7 @@
             </form>
             <form action="../aboutus" method="GET">
                 <button>
-                    About
+                    About us
                 </button>
             </form>
             <form action="../faculty/login" method="GET">
