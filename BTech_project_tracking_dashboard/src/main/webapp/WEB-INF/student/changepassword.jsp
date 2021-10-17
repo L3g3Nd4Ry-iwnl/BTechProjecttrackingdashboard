@@ -28,7 +28,7 @@
                     About us
                 </button>
             </form>
-            <form action="../student/logout" method="GET">
+            <form action="../student/logout" method="POST">
                 <button>
                     Log-out
                 </button>

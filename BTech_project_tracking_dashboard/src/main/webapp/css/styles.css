@@ -16,7 +16,9 @@ body {
 .account-set-body,
 .create-proj-body,
 .chgpwd-body,
-.update-body {
+.update-body,
+.prjpage-body,
+.panel-body {
   background-color: #3aafa9;
 }
 
@@ -82,7 +84,8 @@ body {
 .crtprj-form-class button:hover,
 .chgpwd-class button:hover,
 .update-class button:hover,
-.changepwd button:hover {
+.changepwd button:hover,
+.panel-form-class button:hover {
   background-color: #2b7a78;
 }
 
@@ -106,7 +109,9 @@ body {
 .about-header,
 .create-proj-header,
 .chgpwd-header,
-.update-header {
+.update-header,
+.prjpage-header,
+.panel-header {
   background-color: #17252a;
   display: flex;
   flex-direction: row;
@@ -119,7 +124,8 @@ body {
 .about-header h1,
 .create-proj-header h1,
 .chgpwd-header h1,
-.update-header h1 {
+.update-header h1,
+.panel-header h1 {
   font-family: "Orbitron", sans-serif;
   color: #3aafa9;
   flex-grow: 5;
@@ -160,7 +166,8 @@ body {
 .register-form,
 .project-form,
 .chgpwd-form,
-.update-form {
+.update-form,
+.panel-form {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -173,7 +180,8 @@ body {
 .register-form img,
 .project-form img,
 .chgpwd-form img,
-.update-form img {
+.update-form img,
+.panel-form img {
   border-radius: 25px 0px 0px 0px;
 }
 
@@ -197,7 +205,8 @@ body {
 .register-form-class input,
 .crtprj-form-class input,
 .chgpwd-class input,
-.update-class input {
+.update-class input,
+.panel-form-class input {
   border-radius: 25px 0px 25px 0px;
   width: 200px;
   padding: 10px;
@@ -209,7 +218,8 @@ body {
 .register-form-class label,
 .crtprj-form-class label,
 .chgpwd-class label,
-.update-class label {
+.update-class label,
+.panel-form-class label {
   margin: 5px;
   font-size: larger;
 }
@@ -218,7 +228,8 @@ body {
 .register-form-class button,
 .crtprj-form-class button,
 .chgpwd-class button,
-.update-class button {
+.update-class button,
+.panel-form-class button {
   font-family: "Orbitron", sans-serif;
   margin: 20px 5px;
   padding: 10px 20px;

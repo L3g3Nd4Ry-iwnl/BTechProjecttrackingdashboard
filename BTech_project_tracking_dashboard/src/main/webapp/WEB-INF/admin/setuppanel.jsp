@@ -2,31 +2,33 @@
     pageEncoding="ISO-8859-1"%>
 <%
 	response.setHeader("Cache-Control","no-cache, no-store, must-revalidate");
-%>   
+%>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Oxygen:wght@300&display=swap"
         rel="stylesheet">
-    <title>Update Profile</title>
+    <title>Create new faculty panel</title>
+
 </head>
 
-<body class="update-body">
-    <header class="update-header">
+<body class="panel-body">
+    <header class="panel-header">
         <h1>B.TECH PROJECT TRACKER</h1>
         <div class="logout-redirect">
-            <form action="../aboutus" method="GET">
+            <form action="../../aboutus" method="GET">
                 <button>
                     About
                 </button>
             </form>
-            <form action="../student/logout" method="POST">
+            <form action="../../admin/logout" method="POST">
                 <button>
                     Log-out
                 </button>
@@ -34,51 +36,41 @@
         </div>
     </header>
 
-    <main class="update-form">
-        <img src="../images/update.jpg" height="auto" width="50%">
+    <main class="panel-form">
+        <img src="../images/panel.jpg" height="auto" width="auto">
         <div class="form-details">
-            <h1>Update Profile</h1>
-            <form class="update-class" action="../student/profile" method="POST">
+            <h1>Create Panel</h1>
+            <form class="panel-form-class" action="../../admin/setup/panel" method="POST">
                 <div class="form-group">
                     <div class="form-container">
-                        <label for="name"><strong>Name</strong></label>
-                        <label type="text" name="name">${name}</label>
-                    </div>
-
-                    <div class="form-container">
-                        <label for="department"><strong>Department</strong></label>
-                        <label type="text" name="department">${department}</label>
+                        <label for="panelno"><strong>Panel Number</strong></label>
+                        <input type="number" placeholder="Enter Panel Number" name="panelno">
                     </div>
                 </div>
-
                 <div class="form-group">
                     <div class="form-container">
-                        <label for="email"><strong>Email</strong></label>
-                        <label type="email" name="email">${email}</label>
-                    </div>
-
-                    <div class="form-container">
-                        <label for="rollno"><strong>Roll Number</strong></label>
-                        <label type="text" name="rollno">${roll_no}</label>
+                        <label for="faculty1"><strong>Faculty ID 1</strong></label>
+                        <input type="text" placeholder="faculty ID 1" name="faculty1">
                     </div>
                 </div>
-
                 <div class="form-group">
                     <div class="form-container">
-                        <label for="mobile"><strong>Mobile Number</strong></label>
-                        <input type="tel" pattern="[6-9]{1}[0-9]{9}" placeholder=${mobile} name="mobile">
+                        <label for="faculty2"><strong>Faculty ID 2</strong></label>
+                        <input type="text" placeholder="faculty ID 2" name="faculty2">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-container">
+                        <label for="faculty3"><strong>Faculty ID 3</strong></label>
+                        <input type="text" placeholder="faculty ID 3" name="faculty3">
                     </div>
                 </div>
                 <button type="submit" value="">Submit</button>
             </form>
-
-            <form action="../student/changepass" method="GET" class="changepwd">
-                <button>Change Password</button>
-            </form>
-
         </div>
 
     </main>
+
 </body>
 
 </html>
