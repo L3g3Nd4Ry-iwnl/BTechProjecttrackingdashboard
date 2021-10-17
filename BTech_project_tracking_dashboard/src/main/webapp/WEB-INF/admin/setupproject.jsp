@@ -10,7 +10,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Oxygen:wght@300&display=swap"
@@ -23,12 +23,12 @@
     <header class="create-proj-header">
         <h1>B.TECH PROJECT TRACKER</h1>
         <div class="logout-redirect">
-            <form action="../aboutus" method="GET">
+            <form action="../../aboutus" method="GET">
                 <button>
                     About
                 </button>
             </form>
-            <form action="../admin/logout" method="GET">
+            <form action="../../admin/logout" method="GET">
                 <button>
                     Log-out
                 </button>
@@ -37,10 +37,10 @@
     </header>
 
     <main class="project-form">
-        <img src="../images/create_prj.jpg" height="auto" width="auto">
+        <img src="../../images/create_prj.jpg" height="auto" width="auto">
         <div class="form-details">
             <h1>Create Project</h1>
-            <form class="crtprj-form-class" action="../admin/setup/project" method="POST">
+            <form class="crtprj-form-class" action="../../admin/setup/project" method="POST">
                 <div class="form-group">
                     <div class="form-container">
                         <label for="projectname"><strong>Project Name</strong></label>

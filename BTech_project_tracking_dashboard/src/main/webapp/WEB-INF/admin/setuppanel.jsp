@@ -37,7 +37,7 @@
     </header>
 
     <main class="panel-form">
-        <img src="../images/panel.jpg" height="auto" width="auto">
+        <img src="../../images/panel.jpg" height="auto" width="auto">
         <div class="form-details">
             <h1>Create Panel</h1>
             <form class="panel-form-class" action="../../admin/setup/panel" method="POST">
