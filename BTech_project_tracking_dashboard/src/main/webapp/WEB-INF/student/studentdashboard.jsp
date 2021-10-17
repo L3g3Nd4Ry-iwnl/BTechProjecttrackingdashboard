@@ -40,7 +40,14 @@
         <div class="intro">
             <h2>Student life is the seed of the life. Plant it wisely!</h2>
         </div>
-
+		<%
+			if(! (getServletContext().getAttribute("message")==null)){
+				out.println("<div class=\"intro\">");
+				out.println(getServletContext().getAttribute("message"));
+				out.println("</div>");
+				getServletContext().removeAttribute("message");
+			}
+		%>
         <div class="user-image">
             <img height="200px" width="200px" src="../images/student.png">
         </div>

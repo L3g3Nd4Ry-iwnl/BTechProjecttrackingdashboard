@@ -70,7 +70,7 @@ public class SetupFacultyAccount extends HttpServlet{
 				st.setString(5,password_hash);
 				st.setString(6,mobilenum);
 				status = st.executeUpdate();
-		
+				con.close();
 				st.close();
 			} catch (ClassNotFoundException | SQLException e) {
 				// TODO Auto-generated catch block

@@ -1,7 +1,6 @@
 package faculty;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.annotation.WebServlet;
 
@@ -33,14 +32,7 @@ public class FacultyDashboard extends HttpServlet{
 		}
 		else {
 			req.setAttribute("error","Unauthorized access");
-			req.getRequestDispatcher("../admin/login").forward(req, res);
+			req.getRequestDispatcher("../faculty/login").forward(req, res);
 		}
-	}
-	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
-		res.setContentType("text/html");
-		PrintWriter out= res.getWriter();
-		out.println("In post of faculty dash");
-		out.close();
-	}
-	
+	}	
 }

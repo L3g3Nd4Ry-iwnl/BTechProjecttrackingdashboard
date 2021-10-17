@@ -34,9 +34,10 @@ public class StudentLogin extends HttpServlet{
 		String usermail = req.getParameter("email");
 		String userpass = req.getParameter("password");
 		String password_from_db = null;
+		String roll_number = null;
 		try {
 			Connection con = DBConnectivity.initializeDatabase();
-			PreparedStatement st = con.prepareStatement("SELECT password FROM student WHERE email=? LIMIT 1");
+			PreparedStatement st = con.prepareStatement("SELECT password, roll_number FROM student WHERE email=? LIMIT 1");
 			st.setString(1,usermail);
 			ResultSet rs = st.executeQuery();
 			
@@ -44,11 +45,13 @@ public class StudentLogin extends HttpServlet{
 			while (rs.next()) {
 				account_valid = true;
 		        password_from_db = rs.getString("password");
+		        roll_number = rs.getString("roll_number");
 		    }
 			if (account_valid) {
 				if(Hasher.verifyPassword(userpass, password_from_db)) {
 					res.addCookie(new Cookie("user_type", student_cookie));
 					res.addCookie(new Cookie("user_email",usermail));
+					res.addCookie(new Cookie("user_id",roll_number));
 					res.sendRedirect("../student/dashboard");
 				}
 				else {

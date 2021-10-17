@@ -40,6 +40,14 @@
         <div class="intro">
             <h2>Teacher's affect eternity; No one can tell where their Influence stops!</h2>
         </div>
+        <%
+			if(! (getServletContext().getAttribute("message")==null)){
+				out.println("<div class=\"intro\">");
+				out.println(getServletContext().getAttribute("message"));
+				out.println("</div>");
+				getServletContext().removeAttribute("message");
+			}
+		%>
 
         <div class="user-image">
             <img height="200px" width="200px" src="../images/faculty.jpg">
@@ -56,7 +64,7 @@
                         <path
                             d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
                     </svg>
-                    <form action="../faculty/profile/update" method="GET">
+                    <form action="../faculty/profile" method="GET">
                         <button>View/Update Profile</button>
                     </form>
                 </div>
