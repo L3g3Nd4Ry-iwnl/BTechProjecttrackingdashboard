@@ -1,9 +1,6 @@
 package misc;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-
-import misc.Hasher;
 import javax.servlet.ServletException;
 
 import javax.servlet.http.HttpServlet;
@@ -12,8 +9,12 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.annotation.WebServlet;
 
 @WebServlet("/verify")
-public class VerifyLogin {
+public class VerifyLogin extends HttpServlet{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5379410378491324560L;
 	private static String hash = "37f326197305e05e775464ea05a7c875aa35747b66c33c0f7218a5734898eb0f";
 	private static String email = "admin@amrita.edu";
 	

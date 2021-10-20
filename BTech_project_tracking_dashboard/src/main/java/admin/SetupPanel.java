@@ -68,7 +68,6 @@ private static String admin_cookie = "f07bf50b0455c2346f8883d7697a158b703338dddc
 				status = st.executeUpdate();
 				st.close();
 			} catch (ClassNotFoundException | SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			if(status>0) {

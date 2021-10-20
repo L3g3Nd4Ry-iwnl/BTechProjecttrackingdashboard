@@ -79,7 +79,6 @@ public class SetupProject extends HttpServlet{
 		
 				st.close();
 			} catch (ClassNotFoundException | SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			if(status>0) {
