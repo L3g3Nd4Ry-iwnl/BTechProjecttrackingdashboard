@@ -9,6 +9,7 @@ body {
 }
 
 .login-body,
+.addmodule-body
 .prj-body,
 .home-body,
 .dashboard-body,
@@ -17,7 +18,6 @@ body {
 .create-proj-body,
 .chgpwd-body,
 .update-body,
-.prjpage-body,
 .panel-body {
   background-color: #3aafa9;
 }
@@ -84,6 +84,7 @@ body {
 .crtprj-form-class button:hover,
 .chgpwd-class button:hover,
 .update-class button:hover,
+.addmodule-class button:hover,
 .changepwd button:hover,
 .panel-form-class button:hover {
   background-color: #2b7a78;
@@ -104,6 +105,7 @@ body {
 
 .login-header,
 .prj-header,
+.prjpage-header,
 .dashboard-header,
 .account-set-header,
 .about-header,
@@ -111,6 +113,7 @@ body {
 .chgpwd-header,
 .update-header,
 .prjpage-header,
+.addmodule-header,
 .panel-header {
   background-color: #17252a;
   display: flex;
@@ -119,12 +122,15 @@ body {
 
 .login-header h1,
 .prj-header h1,
+.prjpage-header h1,
+.prjpage-header h1,
 .dashboard-header h1,
 .account-set-header h1,
 .about-header h1,
 .create-proj-header h1,
 .chgpwd-header h1,
 .update-header h1,
+.addmodule-header h1,
 .panel-header h1 {
   font-family: "Orbitron", sans-serif;
   color: #3aafa9;
@@ -145,6 +151,7 @@ body {
 }
 
 .redirect button,
+.addmodulebutton,
 .logout-redirect button,
 .about-redirect button {
   font-family: "Orbitron", sans-serif;
@@ -156,6 +163,7 @@ body {
 }
 
 .redirect button:hover,
+.addmodulebutton:hover,
 .logout-redirect button:hover,
 .about-redirect button:hover {
   background-color: #feffff;
@@ -166,6 +174,7 @@ body {
 .register-form,
 .project-form,
 .chgpwd-form,
+.addmodule-form,
 .update-form,
 .panel-form {
   display: flex;
@@ -177,6 +186,7 @@ body {
 
 .login-form img,
 .about-dev img,
+.addmodule-form img,
 .register-form img,
 .project-form img,
 .chgpwd-form img,
@@ -206,6 +216,7 @@ body {
 .crtprj-form-class input,
 .chgpwd-class input,
 .update-class input,
+.addmodule-class input,
 .panel-form-class input {
   border-radius: 25px 0px 25px 0px;
   width: 200px;
@@ -219,6 +230,7 @@ body {
 .crtprj-form-class label,
 .chgpwd-class label,
 .update-class label,
+.addmodule-class label,
 .panel-form-class label {
   margin: 5px;
   font-size: larger;
@@ -228,6 +240,7 @@ body {
 .register-form-class button,
 .crtprj-form-class button,
 .chgpwd-class button,
+.addmodule-class button,
 .update-class button,
 .panel-form-class button {
   font-family: "Orbitron", sans-serif;
@@ -408,4 +421,70 @@ td {
   background-color: #17252a;
   color: #feffff;
   border-radius: 25px 0px 25px 0px;
+}
+
+.prjpage-body{
+  background-color: #def2f1;
+}
+
+.prjpage-main{
+  font-family: "Orbitron", sans-serif;
+}
+.prjpage-divider{
+  display: flex;
+  flex-direction: row;
+}
+
+.prj-details{
+  flex-grow: 4;
+}
+
+.prj-modules{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  flex-grow: 6;
+}
+
+.prj-modules form{
+  text-align: center;
+}
+
+.prjpage-main h1{
+  text-align: center;
+}
+
+.headings{
+  margin: 0;
+  padding: 10px;
+}
+
+.hh{
+  margin: 0;
+  padding: 0 10px;
+}
+
+.modulecontent{
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: #def2f1;
+}
+
+.modulenumber{
+  border-radius: 25px 0 0 0;
+  background-color:#17252a;
+  color: #3aafa9;
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+}
+
+.modulename{
+  border-radius: 0 0 25px 0;
+  text-align: center;
+  background-color: #3aafa9;
+  color: white;
+  padding: 15px;
+  margin: 0;
 }
