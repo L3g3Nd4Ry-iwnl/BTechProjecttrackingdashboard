@@ -3,7 +3,28 @@
 <%
 	response.setHeader("Cache-Control","no-cache, no-store, must-revalidate");
 %>  
-
+<%@ page import="javax.servlet.http.Cookie" %>
+<%
+    	String student_cookie = "6b1973c6b62161c16877794881fa31d928bbb3735d76cc170809657cde58512c";
+    	String faculty_cookie = "a55535438557826c9097027828769fb888ee18ee708becedfec111ec4f31e24c";
+    	String admin_cookie = "f07bf50b0455c2346f8883d7697a158b703338dddc3c7b4cd33e2c1b85df0711";
+        %>
+        <%
+        String usertype = "";
+		Cookie ck[] = request.getCookies();
+		String fid = "";
+		for(int i=0;i<ck.length;i++){   
+			if(ck[i].getName().equals("user_type") && ck[i].getValue().equals(faculty_cookie)) {
+				usertype = "faculty";
+			}
+			else if(ck[i].getName().equals("user_type") && ck[i].getValue().equals(admin_cookie)) {
+				usertype = "admin";
+			}
+			else if(ck[i].getName().equals("user_type") && ck[i].getValue().equals(student_cookie)) {
+				usertype = "student";
+			}
+	}
+%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +50,8 @@
                     About
                 </button>
             </form>
-            <form action="../../student/logout" method="GET">
+			<% String logout = "../../"+usertype+"/logout"; %>
+            <form action=<% out.print(logout) ;%> method="POST">
                 <button>
                     Log-out
                 </button>
